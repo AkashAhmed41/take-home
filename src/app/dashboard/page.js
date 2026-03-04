@@ -1,3 +1,9 @@
+import DashboardLayout from "@/components/layout/DashboardLayout";
+
 export default function Page() {
-  return <p>Project initialized</p>;
+  return (
+    <DashboardLayout>
+      <p>Project initialized</p>
+    </DashboardLayout>
+  );
 }

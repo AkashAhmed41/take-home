@@ -1,8 +1,10 @@
 :root {
   --font-sans: var(--font-inter), "Inter", sans-serif;
   --color-primary: #0069f7;
-  --color-bg: #f5f7fa;
+  --color-bg: #f7f7f8;
   --foreground-rgb: 30, 41, 59;
+  --white: #ffffff;
+  --black: #000000;
 }
 
 * {

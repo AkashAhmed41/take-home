@@ -1,0 +1,17 @@
+import Sidebar from "@/components/layout/Sidebar/Sidebar";
+import Header from "@/components/layout/Header/Header";
+import styles from "./DashboardLayout.module.css";
+
+const DashboardLayout = ({ children }) => {
+  return (
+    <div className={styles["layout-container"]}>
+      <Sidebar />
+      <div className={styles["content-wrapper"]}>
+        <Header />
+        <main className={styles["content"]}>{children}</main>
+      </div>
+    </div>
+  );
+};
+
+export default DashboardLayout;
