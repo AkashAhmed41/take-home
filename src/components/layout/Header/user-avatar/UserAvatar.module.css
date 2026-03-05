@@ -1,0 +1,29 @@
+.user-avatar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #2e3950;
+}
+
+.user-role {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #2e3950;
+}

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import NavItem from "../NavItem/NavItem";
+import NavItem from "../nav-item/NavItem";
 import { NavItems } from "@/lib/constants/default-data/NavItems";
 import styles from "./NavLinks.module.css";
 

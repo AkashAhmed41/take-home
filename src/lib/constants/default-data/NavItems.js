@@ -10,7 +10,7 @@ import {
   SiteRiskIndicatorIcon,
   UsersIcon,
   SettingsIcon,
-} from "@/lib/svg/icons";
+} from "@/lib/svg/SidebarIcons";
 import { appRouteList } from "@/lib/utils/PageRouteUtils";
 
 export const NavItems = [

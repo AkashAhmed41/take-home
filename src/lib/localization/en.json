@@ -11,5 +11,12 @@
     "SITE_RISK_INDICATOR": "Site Risk Indicator",
     "USERS": "Users",
     "SETTINGS": "Settings"
+  },
+  "HEADER": {
+    "DASHBOARD": "Dashboard",
+    "UPDATED": "Updated",
+    "MINS_AGO": "2mins ago",
+    "USER_NAME": "Allan Watanabe",
+    "USER_ROLE": "Super Administrator"
   }
 }

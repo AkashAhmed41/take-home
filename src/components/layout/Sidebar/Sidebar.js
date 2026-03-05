@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { Logo } from "@/lib/svg/icons";
-import NavLinks from "./NavLinks/NavLinks";
+import { Logo } from "@/lib/svg/SidebarIcons";
+import NavLinks from "@/components/layout/sidebar/nav-links/NavLinks";
 import styles from "./Sidebar.module.css";
 
 const Sidebar = () => {

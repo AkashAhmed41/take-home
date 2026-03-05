@@ -91,7 +91,7 @@ export const BlockedDomainsIcon = () => (
   </svg>
 );
 
-export const AllowedDomainsIcon = ({ className }) => (
+export const AllowedDomainsIcon = () => (
   <svg
     width="20"
     height="20"
@@ -108,7 +108,7 @@ export const AllowedDomainsIcon = ({ className }) => (
   </svg>
 );
 
-export const ReportsIcon = ({ className }) => (
+export const ReportsIcon = () => (
   <svg
     width="20"
     height="20"
@@ -123,7 +123,7 @@ export const ReportsIcon = ({ className }) => (
   </svg>
 );
 
-export const HistoryOfIPIcon = ({ className }) => (
+export const HistoryOfIPIcon = () => (
   <svg
     width="20"
     height="20"
@@ -138,7 +138,7 @@ export const HistoryOfIPIcon = ({ className }) => (
   </svg>
 );
 
-export const DGADomainIcon = ({ className }) => (
+export const DGADomainIcon = () => (
   <svg
     width="20"
     height="20"
@@ -184,7 +184,7 @@ export const DGADomainIcon = ({ className }) => (
   </svg>
 );
 
-export const BackupRestoreIcon = ({ className }) => (
+export const BackupRestoreIcon = () => (
   <svg
     width="20"
     height="20"
@@ -223,7 +223,7 @@ export const BackupRestoreIcon = ({ className }) => (
   </svg>
 );
 
-export const SiteRiskIndicatorIcon = ({ className }) => (
+export const SiteRiskIndicatorIcon = () => (
   <svg
     width="20"
     height="20"
@@ -245,7 +245,7 @@ export const SiteRiskIndicatorIcon = ({ className }) => (
   </svg>
 );
 
-export const UsersIcon = ({ className }) => (
+export const UsersIcon = () => (
   <svg
     width="20"
     height="20"
@@ -260,7 +260,7 @@ export const UsersIcon = ({ className }) => (
   </svg>
 );
 
-export const SettingsIcon = ({ className }) => (
+export const SettingsIcon = () => (
   <svg
     width="20"
     height="20"
