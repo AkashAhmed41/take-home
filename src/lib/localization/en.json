@@ -1,0 +1,15 @@
+{
+  "SIDEBAR": {
+    "DASHBOARD": "Dashboard",
+    "THREAT_DETECTION": "Threat Detection",
+    "BLOCKED_DOMAINS": "Blocked Domains",
+    "ALLOWED_DOMAINS": "Allowed Domains",
+    "REPORTS": "Reports",
+    "HISTORY_OF_IP": "History of IP",
+    "DGA_DOMAIN": "DGA Domain",
+    "BACKUP_AND_RESTORE": "Backup and Restore",
+    "SITE_RISK_INDICATOR": "Site Risk Indicator",
+    "USERS": "Users",
+    "SETTINGS": "Settings"
+  }
+}
