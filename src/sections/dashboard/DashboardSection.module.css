@@ -1,0 +1,21 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.header span:first-child {
+  color: #969eb0;
+}
+
+.header span:last-child {
+  color: #0069f7;
+}

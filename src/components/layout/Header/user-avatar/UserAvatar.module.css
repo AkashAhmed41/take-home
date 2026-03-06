@@ -17,13 +17,13 @@
 .user-name {
   font-size: 16px;
   font-weight: 400;
-  line-height: 130%;
+  line-height: 21px;
   color: #2e3950;
 }
 
 .user-role {
   font-size: 12px;
   font-weight: 400;
-  line-height: 130%;
+  line-height: 16px;
   color: #2e3950;
 }

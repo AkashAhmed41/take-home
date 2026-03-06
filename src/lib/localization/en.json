@@ -18,5 +18,19 @@
     "MINS_AGO": "2mins ago",
     "USER_NAME": "Allan Watanabe",
     "USER_ROLE": "Super Administrator"
+  },
+  "CALENDAR": {
+    "TITLE": "Threat Detection",
+    "SUBTITLE": "Real-time monitoring and identification of potential risks",
+    "TOTAL_THREATS": "Total Threats Detected",
+    "HIGH": "High",
+    "MEDIUM": "Medium",
+    "LOW": "Low",
+    "THIS_YEAR": "This Year",
+    "LAST_YEAR": "Last Year",
+    "VIEWING": "Viewing",
+    "4_MONTHS": "4 Months",
+    "8_MONTHS": "8 Months",
+    "12_MONTHS": "12 Months"
   }
 }

@@ -16,7 +16,7 @@
 .title {
   font-size: 16px;
   font-weight: 700;
-  line-height: 130%;
+  line-height: 21px;
   color: var(--color-primary);
 }
 
@@ -40,13 +40,13 @@
 .label {
   font-size: 16px;
   font-weight: 400;
-  line-height: 130%;
+  line-height: 21px;
   color: #a6a8ab;
 }
 
 .mins-ago {
   font-size: 16px;
   font-weight: 700;
-  line-height: 130%;
+  line-height: 21px;
   color: var(--color-primary);
 }
