@@ -32,9 +32,10 @@
 
 .months-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(10px, 2.5vw, 30px);
   width: 100%;
+  margin: 0 auto;
 }
 
 .footer {

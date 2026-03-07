@@ -5,20 +5,36 @@ import {
   CALENDAR_GRID_SIZE,
 } from "@/lib/constants/ApplicationConstants";
 
-export const MonthNames = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+export const MonthNames = {
+  long: [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ],
+  short: [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ],
+};
 
 export const WeekDays = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
 

@@ -43,9 +43,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3px 0;
+  width: 100%;
+  max-width: 24px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  min-width: 0;
 }
 
 .disabled {

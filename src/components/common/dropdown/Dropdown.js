@@ -1,11 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { DownVectorIcon } from "@/lib/svg/DashboardIcon";
+import { DownVectorIcon } from "@/lib/svg/DashboardIcons";
+import { useOutsideClick } from "@/hooks/useOutsideClick";
 import styles from "./Dropdown.module.css";
 
 const Dropdown = ({ selected, options, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const containerRef = useOutsideClick(() => setIsOpen(false));
   const [selectedOption, setSelectedOption] = useState(
     options.find((opt) => opt.value === selected) || options[0],
   );
@@ -17,7 +19,7 @@ const Dropdown = ({ selected, options, onChange }) => {
   };
 
   return (
-    <div className={styles["container"]}>
+    <div className={styles["container"]} ref={containerRef}>
       <div className={styles["input-box"]} onClick={() => setIsOpen(!isOpen)}>
         <span>{selectedOption.label}</span>
         <DownVectorIcon />
