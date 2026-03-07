@@ -3,14 +3,15 @@
 import React, { useState } from "react";
 import styles from "./CalendarView.module.css";
 import MonthView from "./month-view/MonthView";
-import MonthSelection from "./month-selection/MonthSelection";
+import ViewSelector from "@/components/common/view-selector/ViewSelector";
 import Dropdown from "@/components/common/dropdown/Dropdown";
 import { CalendarDropdownOptions } from "@/lib/constants/default-data/CalendarDropdownOptions";
+import { MonthSelectionOptions } from "@/lib/constants/default-data/MonthSelectionOptions";
 import { getLocalizedText } from "@/lib/utils/CommonUtils";
 import HorizontalLine from "@/components/common/horizontal-line/HorizontalLine";
 import { DEFAULT_MONTH_COUNT } from "@/lib/constants/ApplicationConstants";
 
-const calendarText = getLocalizedText("CALENDAR");
+const text = getLocalizedText("CALENDAR");
 const currentYear = new Date().getFullYear();
 
 const CalendarView = () => {
@@ -26,8 +27,8 @@ const CalendarView = () => {
     <div className={styles["container"]}>
       <div className={styles["header"]}>
         <div className={styles["header-text"]}>
-          <h2 className={styles["title"]}>{calendarText("TITLE")}</h2>
-          <p className={styles["subtitle"]}>{calendarText("SUBTITLE")}</p>
+          <h2 className={styles["title"]}>{text("TITLE")}</h2>
+          <p className={styles["subtitle"]}>{text("SUBTITLE")}</p>
         </div>
         <Dropdown
           selected={year}
@@ -42,9 +43,10 @@ const CalendarView = () => {
         ))}
       </div>
       <div className={styles["footer"]}>
-        <MonthSelection
-          currentMonthCount={monthCount}
-          onMonthCountChange={setMonthCount}
+        <ViewSelector
+          options={MonthSelectionOptions}
+          selectedValue={monthCount}
+          onSelectionChange={setMonthCount}
         />
       </div>
     </div>

@@ -6,7 +6,7 @@ import { isEmptyObj } from "@/lib/utils/ObjectUtils";
 import { ThreatSeverityType } from "@/lib/constants/enum/ThreatSeverityType";
 import HorizontalLine from "@/components/common/horizontal-line/HorizontalLine";
 
-const calendarText = getLocalizedText("CALENDAR");
+const text = getLocalizedText("CALENDAR");
 
 const ThreatStats = ({ dateStr, timeStr, stats }) => {
   if (isEmptyObj(stats)) return null;
@@ -34,7 +34,7 @@ const ThreatStats = ({ dateStr, timeStr, stats }) => {
     <div className={styles["overlay"]}>
       <div className={styles["container"]}>
         <div className={styles["header"]}>
-          <h3 className={styles["title"]}>{calendarText("TITLE")}</h3>
+          <h3 className={styles["title"]}>{text("TITLE")}</h3>
           <div className={styles["date-time"]}>
             <CalendarIcon />
             <span className={styles["time-string"]}>
@@ -48,7 +48,7 @@ const ThreatStats = ({ dateStr, timeStr, stats }) => {
             <div className={styles["label-wrapper"]}>
               <InfoIcon />
               <span className={styles["total-label"]}>
-                {calendarText("TOTAL_THREATS")}
+                {text("TOTAL_THREATS")}
               </span>
             </div>
             <span className={styles["total-count"]}>{total}</span>
@@ -61,7 +61,7 @@ const ThreatStats = ({ dateStr, timeStr, stats }) => {
               key={threat.key}
               className={`${styles["stat-item"]} ${styles[threat.className]}`}
             >
-              <span>{calendarText(threat.key)}</span>
+              <span>{text(threat.key)}</span>
               <span>{threat.value}</span>
             </div>
           ))}

@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-dropdown {
+  width: 130px;
+  height: 36px;
+}
+
+.filter-input {
+  padding: 8px 10px;
+}
+
+.date-dropdown {
+  width: 170px;
+  height: 36px;
+}
+
+.date-input {
+  padding: 8px 10px;
+  border-radius: 10px;
+}

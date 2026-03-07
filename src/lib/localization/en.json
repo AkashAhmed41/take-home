@@ -28,9 +28,36 @@
     "LOW": "Low",
     "THIS_YEAR": "This Year",
     "LAST_YEAR": "Last Year",
-    "VIEWING": "Viewing",
     "4_MONTHS": "4 Months",
     "8_MONTHS": "8 Months",
     "12_MONTHS": "12 Months"
+  },
+  "THREAT_LIST": {
+    "TITLE": "Top Threats Detected",
+    "SELECT_THREAT": "Select Threat",
+    "SELECT_RISK": "Select Risk",
+    "DATE_RANGE": "From Date - To Date",
+    "TIMESTAMP": "Timestamp",
+    "COUNTRY": "Country",
+    "THREAT_TYPE": "Threat Type",
+    "SOURCE_IP": "Source IP",
+    "DESTINATION_DOMAIN": "Destination Domain",
+    "DESTINATION_IP": "Destination IP",
+    "RISK": "Risk",
+    "ADWARE": "Adware",
+    "MALWARE": "Malware",
+    "SPYWARE": "Spyware",
+    "PHISHING": "Phishing",
+    "RANSOMWARE": "Ransomware",
+    "SINGAPORE": "Singapore",
+    "INDIA": "India",
+    "NEPAL": "Nepal",
+    "UNITED_STATES": "United States",
+    "SUSPICIOUS": "Suspicious",
+    "MODERATE": "Moderate",
+    "CRITICAL": "Critical"
+  },
+  "COMMON": {
+    "VIEWING": "Viewing"
   }
 }

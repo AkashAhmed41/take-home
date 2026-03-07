@@ -15,3 +15,9 @@ export const THREAT_SEED_OFFSETS = {
   HOURS: 3,
   MINUTES: 4,
 };
+
+export const DEFAULT_PAGE_SIZE = 10;
+export const DEFAULT_PAGE_NUMBER = 1;
+
+export const MIN_PAGE_NUMBER = 1;
+export const MAX_PAGE_NUMBER = 4;

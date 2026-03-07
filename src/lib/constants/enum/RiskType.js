@@ -1,0 +1,5 @@
+export const RiskType = {
+  SUSPICIOUS: "SUSPICIOUS",
+  MODERATE: "MODERATE",
+  CRITICAL: "CRITICAL",
+};

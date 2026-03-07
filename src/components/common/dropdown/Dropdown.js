@@ -4,12 +4,20 @@ import React, { useState } from "react";
 import { DownVectorIcon } from "@/lib/svg/DashboardIcons";
 import { useOutsideClick } from "@/hooks/useOutsideClick";
 import styles from "./Dropdown.module.css";
+import { isEmptyArray } from "@/lib/utils/ObjectUtils";
 
-const Dropdown = ({ selected, options, onChange }) => {
+const Dropdown = ({
+  selected,
+  options,
+  onChange,
+  placeholder = "Select",
+  className = "",
+  inputClassName = "",
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useOutsideClick(() => setIsOpen(false));
   const [selectedOption, setSelectedOption] = useState(
-    options.find((opt) => opt.value === selected) || options[0],
+    options.find((opt) => opt.value === selected) || null,
   );
 
   const handleSelect = (option) => {
@@ -19,18 +27,23 @@ const Dropdown = ({ selected, options, onChange }) => {
   };
 
   return (
-    <div className={styles["container"]} ref={containerRef}>
-      <div className={styles["input-box"]} onClick={() => setIsOpen(!isOpen)}>
-        <span>{selectedOption.label}</span>
+    <div className={`${styles["container"]} ${className}`} ref={containerRef}>
+      <div
+        className={`${styles["input-box"]} ${inputClassName}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span>{selectedOption ? selectedOption.label : placeholder}</span>
         <DownVectorIcon />
       </div>
-      {isOpen && (
+      {isOpen && !isEmptyArray(options) && (
         <div className={styles["menu"]}>
           {options.map(({ label, value }) => (
             <div
               key={value}
               className={`${styles["item"]} ${
-                value === selectedOption.value ? styles["active"] : ""
+                selectedOption && value === selectedOption.value
+                  ? styles["active"]
+                  : ""
               }`}
               onClick={() => handleSelect({ label, value })}
             >

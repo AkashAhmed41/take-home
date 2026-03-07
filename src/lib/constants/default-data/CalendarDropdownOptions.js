@@ -1,9 +1,9 @@
 import { getLocalizedText } from "@/lib/utils/CommonUtils";
 
 const currentYear = new Date().getFullYear();
-const calendarText = getLocalizedText("CALENDAR");
+const text = getLocalizedText("CALENDAR");
 
 export const CalendarDropdownOptions = [
-  { label: calendarText("THIS_YEAR"), value: currentYear },
-  { label: calendarText("LAST_YEAR"), value: currentYear - 1 },
+  { label: text("THIS_YEAR"), value: currentYear },
+  { label: text("LAST_YEAR"), value: currentYear - 1 },
 ];

@@ -4,7 +4,7 @@ import { WeekDays, getMonthDays, MonthNames } from "@/lib/utils/CalendarUtils";
 import { useOutsideClick } from "@/hooks/useOutsideClick";
 import {
   generateThreatStats,
-  getformattedDateTime,
+  getFormattedDateTime,
 } from "@/lib/utils/ThreatGenerationUtils";
 import ThreatStats from "../threat-stats/ThreatStats";
 
@@ -23,7 +23,7 @@ const MonthView = ({ month, year }) => {
       threatStats: dayObj.currentMonth
         ? generateThreatStats(dayObj.day, month, year)
         : null,
-      ...getformattedDateTime(dayObj.day, month, year),
+      ...getFormattedDateTime(dayObj.day, month, year),
     }));
   }, [month, year]);
 
