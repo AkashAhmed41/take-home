@@ -124,3 +124,25 @@
   border-right: 10px solid transparent;
   border-top: 10px solid #ffffff;
 }
+
+.align-left {
+  left: 0;
+  transform: none;
+}
+
+.align-left .pointer {
+  left: 12px;
+  transform: none;
+}
+
+.align-right {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+
+.align-right .pointer {
+  left: auto;
+  right: 12px;
+  transform: none;
+}

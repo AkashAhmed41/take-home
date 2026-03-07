@@ -109,9 +109,9 @@ export const LeftIcon = () => (
     <path
       d="M8.75 4.375L5.625 7.5L8.75 10.625"
       stroke="black"
-      stroke-width="0.625"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="0.625"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
@@ -127,9 +127,9 @@ export const RightIcon = () => (
     <path
       d="M6.25 10.625L9.375 7.5L6.25 4.375"
       stroke="black"
-      stroke-width="0.625"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="0.625"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 );

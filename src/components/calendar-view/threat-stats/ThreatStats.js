@@ -8,7 +8,7 @@ import HorizontalLine from "@/components/common/horizontal-line/HorizontalLine";
 
 const text = getLocalizedText("CALENDAR");
 
-const ThreatStats = ({ dateStr, timeStr, stats }) => {
+const ThreatStats = ({ dateStr, timeStr, stats, align = "center" }) => {
   if (isEmptyObj(stats)) return null;
 
   const { total, high, medium, low } = stats;
@@ -31,7 +31,7 @@ const ThreatStats = ({ dateStr, timeStr, stats }) => {
   ];
 
   return (
-    <div className={styles["overlay"]}>
+    <div className={`${styles["overlay"]} ${styles[`align-${align}`] || ""}`}>
       <div className={styles["container"]}>
         <div className={styles["header"]}>
           <h3 className={styles["title"]}>{text("TITLE")}</h3>

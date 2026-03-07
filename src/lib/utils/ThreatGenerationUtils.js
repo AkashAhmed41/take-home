@@ -46,7 +46,7 @@ export const generateThreatStats = (day, month, year) => {
 export const getFormattedDateTime = (day, month, year, extraSeed = 0) => {
   const seed = getDateSeed(day, month, year) + extraSeed;
   const monthName = MonthNames.short[month];
-  const dateStr = `${monthName} ${day}, ${year}`;
+  const dateStr = `${monthName} ${String(day).padStart(2, "0")}, ${year}`;
 
   const hours = String(
     Math.floor(getSeededRandom(seed + THREAT_SEED_OFFSETS.HOURS) * 24),
@@ -59,20 +59,24 @@ export const getFormattedDateTime = (day, month, year, extraSeed = 0) => {
   return { dateStr, timeStr };
 };
 
-export const generateThreatData = (count = DEFAULT_PAGE_SIZE) => {
+export const generateThreatData = (
+  count = DEFAULT_PAGE_SIZE,
+  baseSeed = 100,
+) => {
   const threatTypes = Object.values(ThreatType);
   const riskTypes = Object.values(RiskType);
 
+  const baseDate = new Date("2026-03-08T12:00:00");
+
   return Array.from({ length: count }, (_, i) => {
-    const seed = i + Date.now();
+    const seed = baseSeed + i;
     const country =
       CountryList[Math.floor(getSeededRandom(seed) * CountryList.length)];
 
-    const now = new Date();
     const { dateStr, timeStr } = getFormattedDateTime(
-      now.getDate(),
-      now.getMonth(),
-      now.getFullYear(),
+      baseDate.getDate(),
+      baseDate.getMonth(),
+      baseDate.getFullYear(),
       i,
     );
 

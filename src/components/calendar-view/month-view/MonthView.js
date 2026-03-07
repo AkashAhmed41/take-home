@@ -55,30 +55,38 @@ const MonthView = ({ month, year }) => {
         ))}
       </div>
       <div className={styles["days-grid"]}>
-        {daysWithThreats.map((dayObj, index) => (
-          <div
-            key={index}
-            className={`${styles["day"]} ${
-              !dayObj.currentMonth ? styles["disabled"] : ""
-            }`}
-            style={
-              dayObj.currentMonth ? getDayStyle(dayObj.threatStats.total) : {}
-            }
-            onClick={() =>
-              dayObj.currentMonth &&
-              setSelectedDay(selectedDay === dayObj ? null : dayObj)
-            }
-          >
-            {dayObj.day}
-            {selectedDay === dayObj && (
-              <ThreatStats
-                dateStr={dayObj.dateStr}
-                timeStr={dayObj.timeStr}
-                stats={dayObj.threatStats}
-              />
-            )}
-          </div>
-        ))}
+        {daysWithThreats.map((dayObj, index) => {
+          const columnIndex = index % 7;
+          let align = "center";
+          if (columnIndex < 2) align = "left";
+          else if (columnIndex > 4) align = "right";
+
+          return (
+            <div
+              key={index}
+              className={`${styles["day"]} ${
+                !dayObj.currentMonth ? styles["disabled"] : ""
+              }`}
+              style={
+                dayObj.currentMonth ? getDayStyle(dayObj.threatStats.total) : {}
+              }
+              onClick={() =>
+                dayObj.currentMonth &&
+                setSelectedDay(selectedDay === dayObj ? null : dayObj)
+              }
+            >
+              {dayObj.day}
+              {selectedDay === dayObj && (
+                <ThreatStats
+                  dateStr={dayObj.dateStr}
+                  timeStr={dayObj.timeStr}
+                  stats={dayObj.threatStats}
+                  align={align}
+                />
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
