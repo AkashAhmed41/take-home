@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import ThreatFilters from "./threat-filters/ThreatFilters";
-import ThreatTable from "./threat-table/ThreatTable";
-import ThreatPagination from "./threat-pagination/ThreatPagination";
 import { getLocalizedText } from "@/lib/utils/CommonUtils";
 import {
   DEFAULT_PAGE_SIZE,
   DEFAULT_PAGE_NUMBER,
 } from "@/lib/constants/ApplicationConstants";
+import ThreatFilters from "@/components/threat-list/threat-filters/ThreatFilters";
+import ThreatTable from "@/components/threat-list/threat-table/ThreatTable";
+import ThreatPagination from "@/components/threat-list/threat-pagination/ThreatPagination";
 import styles from "./ThreatList.module.css";
 
 const text = getLocalizedText("THREAT_LIST");

@@ -1,12 +1,12 @@
 import React, { useState, useMemo } from "react";
-import styles from "./MonthView.module.css";
 import { WeekDays, getMonthDays, MonthNames } from "@/lib/utils/CalendarUtils";
-import { useOutsideClick } from "@/hooks/useOutsideClick";
 import {
   generateThreatStats,
   getFormattedDateTime,
 } from "@/lib/utils/ThreatGenerationUtils";
-import ThreatStats from "../threat-stats/ThreatStats";
+import { useOutsideClick } from "@/hooks/useOutsideClick";
+import ThreatStats from "@/components/calendar-view/threat-stats/ThreatStats";
+import styles from "./MonthView.module.css";
 
 const ThreatOpacities = [0.1, 0.3, 0.5, 0.7, 1.0];
 const OpacityInterval = 10;

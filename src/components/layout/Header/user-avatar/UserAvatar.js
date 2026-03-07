@@ -1,6 +1,6 @@
 import React from "react";
-import { getLocalizedText } from "@/lib/utils/CommonUtils";
 import Image from "next/image";
+import { getLocalizedText } from "@/lib/utils/CommonUtils";
 import styles from "./UserAvatar.module.css";
 
 const text = getLocalizedText("HEADER");

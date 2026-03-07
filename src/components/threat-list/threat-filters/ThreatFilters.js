@@ -1,7 +1,7 @@
 import React from "react";
-import Dropdown from "@/components/common/dropdown/Dropdown";
-import { FilterIcon } from "@/lib/svg/DashboardIcons";
 import { getLocalizedText } from "@/lib/utils/CommonUtils";
+import { FilterIcon } from "@/lib/svg/DashboardIcons";
+import Dropdown from "@/components/common/dropdown/Dropdown";
 import styles from "./ThreatFilters.module.css";
 
 const text = getLocalizedText("THREAT_LIST");

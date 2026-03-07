@@ -1,4 +1,5 @@
 import React from "react";
+import { getLocalizedText } from "@/lib/utils/CommonUtils";
 import {
   CollapseIcon,
   GlobeIcon,
@@ -6,7 +7,6 @@ import {
   ClockIcon,
 } from "@/lib/svg/HeaderIcons";
 import UserAvatar from "@/components/layout/header/user-avatar/UserAvatar";
-import { getLocalizedText } from "@/lib/utils/CommonUtils";
 import styles from "./Header.module.css";
 
 const text = getLocalizedText("HEADER");

@@ -1,16 +1,16 @@
 import React, { useMemo } from "react";
 import {
-  DoubleLeftIcon,
-  LeftIcon,
-  RightIcon,
-  DoubleRightIcon,
-} from "@/lib/svg/DashboardIcons";
-import {
   MIN_PAGE_NUMBER,
   MAX_PAGE_NUMBER,
 } from "@/lib/constants/ApplicationConstants";
 import { PaginationOptions } from "@/lib/constants/default-data/PaginationOptions";
 import { PaginationControlType } from "@/lib/constants/enum/PaginationControlType";
+import {
+  DoubleLeftIcon,
+  LeftIcon,
+  RightIcon,
+  DoubleRightIcon,
+} from "@/lib/svg/DashboardIcons";
 import ViewSelector from "@/components/common/view-selector/ViewSelector";
 import styles from "./ThreatPagination.module.css";
 

@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { DownVectorIcon } from "@/lib/svg/DashboardIcons";
-import { useOutsideClick } from "@/hooks/useOutsideClick";
-import styles from "./Dropdown.module.css";
 import { isEmptyArray } from "@/lib/utils/ObjectUtils";
+import { useOutsideClick } from "@/hooks/useOutsideClick";
+import { DownVectorIcon } from "@/lib/svg/DashboardIcons";
+import styles from "./Dropdown.module.css";
 
 const Dropdown = ({
   selected,

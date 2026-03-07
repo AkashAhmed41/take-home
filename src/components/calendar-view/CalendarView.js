@@ -1,15 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-import styles from "./CalendarView.module.css";
-import MonthView from "./month-view/MonthView";
-import ViewSelector from "@/components/common/view-selector/ViewSelector";
-import Dropdown from "@/components/common/dropdown/Dropdown";
+import { getLocalizedText } from "@/lib/utils/CommonUtils";
+import { DEFAULT_MONTH_COUNT } from "@/lib/constants/ApplicationConstants";
 import { CalendarDropdownOptions } from "@/lib/constants/default-data/CalendarDropdownOptions";
 import { MonthSelectionOptions } from "@/lib/constants/default-data/MonthSelectionOptions";
-import { getLocalizedText } from "@/lib/utils/CommonUtils";
+import MonthView from "@/components/calendar-view/month-view/MonthView";
+import ViewSelector from "@/components/common/view-selector/ViewSelector";
+import Dropdown from "@/components/common/dropdown/Dropdown";
 import HorizontalLine from "@/components/common/horizontal-line/HorizontalLine";
-import { DEFAULT_MONTH_COUNT } from "@/lib/constants/ApplicationConstants";
+import styles from "./CalendarView.module.css";
 
 const text = getLocalizedText("CALENDAR");
 const currentYear = new Date().getFullYear();

@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./ThreatStats.module.css";
-import { CalendarIcon, InfoIcon } from "@/lib/svg/DashboardIcons";
 import { getLocalizedText } from "@/lib/utils/CommonUtils";
 import { isEmptyObj } from "@/lib/utils/ObjectUtils";
 import { ThreatSeverityType } from "@/lib/constants/enum/ThreatSeverityType";
+import { CalendarIcon, InfoIcon } from "@/lib/svg/DashboardIcons";
 import HorizontalLine from "@/components/common/horizontal-line/HorizontalLine";
+import styles from "./ThreatStats.module.css";
 
 const text = getLocalizedText("CALENDAR");
 

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./ViewSelector.module.css";
 import { getLocalizedText } from "@/lib/utils/CommonUtils";
+import styles from "./ViewSelector.module.css";
 
 const text = getLocalizedText("COMMON");
 
