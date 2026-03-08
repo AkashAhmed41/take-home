@@ -1,15 +1,16 @@
 .sidebar {
-  width: 300px;
-  min-width: 260px;
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-min-width);
   background-color: var(--color-primary);
-  color: var(--white);
+  color: var(--color-white);
   min-height: 100vh;
-  padding: 30px;
+  padding: var(--spacing-xl);
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: var(--spacing-xl);
   opacity: 1;
 }
+
 .logo-link {
   display: flex;
   align-items: center;

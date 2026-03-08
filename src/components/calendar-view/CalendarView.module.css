@@ -1,9 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  background: #ffffff;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-white);
 }
 
 .header {
@@ -19,13 +19,13 @@
 }
 
 .title {
-  font-size: 20px;
+  font-size: var(--font-size-xl);
   font-weight: 700;
-  line-height: 24px;
+  line-height: var(--line-height-xl);
 }
 
 .subtitle {
-  font-size: 12px;
+  font-size: var(--font-size-sm);
   font-weight: 400;
   line-height: 15px;
 }

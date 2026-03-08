@@ -1,15 +1,15 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--spacing-md);
 }
 
 .header {
   display: flex;
-  gap: 5px;
+  gap: var(--spacing-xs);
   align-items: center;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
 }
 
 .header span:first-child {
@@ -17,5 +17,5 @@
 }
 
 .header span:last-child {
-  color: #0069f7;
+  color: var(--color-primary);
 }

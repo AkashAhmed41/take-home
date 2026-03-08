@@ -1,11 +1,54 @@
 :root {
-  --font-sans: var(--font-inter), "Inter", sans-serif;
   --color-primary: #0069f7;
+  --color-primary-hover: #217cf6;
   --color-bg: #f7f7f8;
-  --white: #ffffff;
-  --black: #000000;
-}
+  --color-white: #ffffff;
+  --color-black: #000000;
 
+  --color-text-main: #2e3950;
+  --color-text-muted: #a6a8ab;
+  --color-text-light: #64748b;
+
+  --color-risk-low: #22c55e;
+  --color-risk-medium: #ea580c;
+  --color-risk-high: #ef4444;
+  --color-risk-suspicious: #ff8a00;
+
+  --color-border: #ededf7;
+  --color-line: #eaeaea;
+  --color-table-header: #f8f8fc;
+
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 25px;
+  --spacing-xl: 30px;
+
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-md: 15px;
+  --font-size-lg: 16px;
+  --font-size-xl: 20px;
+
+  --line-height-xs: 13px;
+  --line-height-sm: 16px;
+  --line-height-md: 19px;
+  --line-height-lg: 21px;
+  --line-height-xl: 24px;
+
+  --sidebar-width: 300px;
+  --sidebar-min-width: 260px;
+  --header-height: 83px;
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 13px;
+  --border-radius-full: 9999px;
+
+  --shadow-sm: 4px 4px 10px 0px #98adc91a;
+
+  --font-sans: var(--font-inter), "Inter", sans-serif;
+}
 * {
   box-sizing: border-box;
   padding: 0;

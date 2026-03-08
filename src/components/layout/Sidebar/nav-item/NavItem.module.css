@@ -1,19 +1,19 @@
 .nav-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 15px 20px;
+  gap: var(--spacing-sm);
+  padding: 15px var(--spacing-md);
   transition: all 0.2s ease;
 }
 
 .nav-item.active,
 .nav-item:hover {
-  background-color: #217cf6;
-  border-radius: 10px;
+  background-color: var(--color-primary-hover);
+  border-radius: var(--border-radius-md);
 }
 
 .label {
-  font-size: 16px;
+  font-size: var(--font-size-lg);
   font-weight: 400;
-  line-height: 21px;
+  line-height: var(--line-height-lg);
 }

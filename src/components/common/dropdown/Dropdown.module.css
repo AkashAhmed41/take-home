@@ -7,11 +7,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
-  padding: 10px;
-  background: #ffffff;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm);
+  background: var(--color-white);
   border: 1px solid #d3d3d3;
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
@@ -20,7 +20,7 @@
 }
 
 .input-box:hover {
-  border-color: #0069f7;
+  border-color: var(--color-primary);
 }
 
 .menu {
@@ -28,9 +28,9 @@
   top: calc(100% + 4px);
   left: 0;
   right: 0;
-  background: #ffffff;
+  background: var(--color-white);
   border: 1px solid #d3d3d3;
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
   z-index: 100;
   overflow: hidden;
 }
@@ -39,7 +39,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
-  padding: 10px;
+  padding: var(--spacing-sm);
   cursor: pointer;
 }
 
@@ -49,5 +49,5 @@
 
 .item.active {
   background: #eef4ff;
-  color: #0069f7;
+  color: var(--color-primary);
 }

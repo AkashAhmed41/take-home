@@ -1,10 +1,10 @@
 .header {
-  height: 83px;
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--white);
-  padding: 19px 30px;
+  background-color: var(--color-white);
+  padding: 19px var(--spacing-xl);
 }
 
 .left-content {
@@ -14,9 +14,9 @@
 }
 
 .title {
-  font-size: 16px;
+  font-size: var(--font-size-lg);
   font-weight: 700;
-  line-height: 21px;
+  line-height: var(--line-height-lg);
   color: var(--color-primary);
 }
 
@@ -38,15 +38,15 @@
 }
 
 .label {
-  font-size: 16px;
+  font-size: var(--font-size-lg);
   font-weight: 400;
-  line-height: 21px;
-  color: #a6a8ab;
+  line-height: var(--line-height-lg);
+  color: var(--color-text-muted);
 }
 
 .mins-ago {
-  font-size: 16px;
+  font-size: var(--font-size-lg);
   font-weight: 700;
-  line-height: 21px;
+  line-height: var(--line-height-lg);
   color: var(--color-primary);
 }

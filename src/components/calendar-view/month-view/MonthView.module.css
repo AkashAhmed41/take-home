@@ -19,9 +19,9 @@
 .month-name,
 .weekday,
 .day {
-  font-size: 11px;
+  font-size: var(--font-size-xs);
   font-weight: 400;
-  line-height: 13px;
+  line-height: var(--line-height-xs);
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
 .days-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
+  gap: var(--spacing-xs);
   padding: 2px 0;
 }
 
@@ -55,5 +55,5 @@
 
 .disabled {
   cursor: not-allowed;
-  color: #cbd5e1;
+  color: var(--color-text-light);
 }

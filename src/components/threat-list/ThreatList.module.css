@@ -1,11 +1,11 @@
 .container {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 4px 4px 10px 0px #98adc91a;
+  background: var(--color-white);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--spacing-md);
   min-width: 0;
   width: 100%;
 }
@@ -18,8 +18,8 @@
 }
 
 .title {
-  font-size: 15px;
+  font-size: var(--font-size-md);
   font-weight: 700;
-  line-height: 19px;
+  line-height: var(--line-height-md);
   white-space: nowrap;
 }

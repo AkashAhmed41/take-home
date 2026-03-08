@@ -17,16 +17,16 @@
 }
 
 .pill {
-  padding: 5px 10px;
+  padding: var(--spacing-xs) var(--spacing-sm);
   background: #ebebeb;
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .active-pill {
-  background: #0069f7;
-  color: #ffffff;
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 .pill:not(.active-pill):hover {

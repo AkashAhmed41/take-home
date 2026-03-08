@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--spacing-sm);
 }
 
 .filter-dropdown {
@@ -19,6 +19,6 @@
 }
 
 .date-input {
-  padding: 8px 10px;
-  border-radius: 10px;
+  padding: 8px var(--spacing-sm);
+  border-radius: var(--border-radius-md);
 }
