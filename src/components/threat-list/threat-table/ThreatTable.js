@@ -1,7 +1,6 @@
 import React, { useMemo } from "react";
 import { getLocalizedText } from "@/lib/utils/CommonUtils";
 import { generateThreatData } from "@/lib/utils/ThreatGenerationUtils";
-import { DEFAULT_PAGE_SIZE } from "@/lib/constants/ApplicationConstants";
 import ReactCountryFlag from "react-country-flag";
 import styles from "./ThreatTable.module.css";
 
