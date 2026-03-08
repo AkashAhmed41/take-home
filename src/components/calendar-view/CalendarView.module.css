@@ -15,7 +15,7 @@
 .header-text {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: var(--spacing-xs);
 }
 
 .title {
@@ -27,13 +27,14 @@
 .subtitle {
   font-size: var(--font-size-sm);
   font-weight: 400;
-  line-height: 15px;
+  line-height: var(--line-height-sm);
 }
 
 .months-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(10px, 2.5vw, 30px);
+  column-gap: clamp(var(--spacing-sm), 2.5vw, var(--spacing-xl));
+  row-gap: var(--spacing-sm);
   width: 100%;
   margin: 0 auto;
 }
@@ -41,7 +42,7 @@
 .footer {
   display: flex;
   justify-content: flex-end;
-  padding-top: 10px;
+  padding-top: var(--spacing-sm);
 }
 
 @media (max-width: 1024px) {
